@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE = 1
+
+%:
+	dh $@
+
+override_dh_strip:
+	/bin/true
+
+override_dh_fixperms:
+	/bin/true
+
+override_dh_strip_nondeterminism:
+	/bin/true
+
+override_dh_installdocs:
+	/bin/true
+
+override_dh_installchangelogs:
+	/bin/true
+
+override_dh_auto_install:
+	mkdir -p debian/nlz-neovim-%NEOVIM_VERSION%
+	cp -rp /opt debian/nlz-neovim-%NEOVIM_VERSION%/

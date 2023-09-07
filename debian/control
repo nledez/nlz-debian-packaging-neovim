@@ -1,0 +1,13 @@
+Source: nlz-neovim-%NEOVIM_VERSION%
+Section: unknown
+Priority: optional
+Maintainer: Nicolas Ledez <github@ledez.net>
+Build-Depends: debhelper, devscripts, build-essential, ca-certificates, ninja-build, gettext, cmake, unzip, curl, git
+Standards-Version: 4.5.1
+
+Package: nlz-neovim-%NEOVIM_VERSION%
+Maintainer: Nicolas Ledez <github@ledez.net>
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: NLedez Neovim editor
